@@ -12,6 +12,12 @@ import random as rnd
 
 
 def get_jokes(joke_count, only_one=False):
+    """
+    Функция генерации шуток, выбирая случайное слово из 3 списков
+    :param joke_count: количество генерируемых шуток
+    :param only_one: запрет повторного использования слов из списков
+    :return: выводит сгенерируемые шутки
+    """
     if only_one and joke_count > 5:
         print('Ошибка. Без повторений может быть не более 5 шуток')
         return
